@@ -12,6 +12,7 @@
    # execute_from_command_line(sys.argv)
 
 #!/usr/bin/env python
+from importlib import reload
 import os
 import sys
 reload(sys);
