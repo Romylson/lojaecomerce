@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import os
 import sys
-reload(sys)
+#reload(sys)
 sys.setdefaultencoding("utf8")
 
 if __name__ == "__main__":
