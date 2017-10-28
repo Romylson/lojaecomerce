@@ -1,1 +1,1 @@
-web: gunicorn lojaecomerce.wsgi --log-file-
+web: gunicorn lojaecomerce.wsgi --log-file=- 
