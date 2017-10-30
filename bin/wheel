@@ -1,4 +1,4 @@
-#!/home/romylson/projetos/lojaecomerce/venv/bin/python3.6
+#!/home/romylson/projetos/lojaecomerce/bin/python
 
 # -*- coding: utf-8 -*-
 import re
