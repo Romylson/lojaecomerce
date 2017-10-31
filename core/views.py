@@ -18,7 +18,6 @@ def contact(request):
     if form.is_valid():
         form.send_mail()
         success = True
-        #full_clean()
     context = {
         'form': form,
         'success': success
