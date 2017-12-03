@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>{% block title %}Django E-Commerce{% endblock %}</title>
+  <title>{% block title %}Concessionária B&L de Veículos{% endblock %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link rel="stylesheet" href="{% static 'assets/bootstrap.min.css' %}" media="screen" />
@@ -14,7 +14,7 @@
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="" class="navbar-brand">Django E-Commerce</a>
+          <a href="" class="navbar-brand">Concessionária B&L de Veículos</a>
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -24,7 +24,7 @@
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
             <li>
-              <a href="{% url 'index' %}">Início</a>
+              <a href="{% url 'index' %}">Dashboard</a>
             </li>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="{% url 'catalog:product_list' %}" id="download">Categorias <span class="caret"></span></a>
@@ -39,6 +39,7 @@
       </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
+            <img class="nav navbar-nav navbar-right" height="100" width="400" src= "http://www.newsrondonia.com.br/imagensNoticias/image/LOGO%20%20CARROS.jpg">
             <li><a href="#">Minha Conta</a></li>
               {% if user.is_authenticated %}
        <li><a href="{% url 'logout' %}">Sair</a></li>
@@ -65,7 +66,7 @@
         <div class="col-lg-12">
           <ul class="list-unstyled">
             <li class="pull-right"><a href="#top">Voltar ao Topo</a></li>
-            <li><a href="">Início</a></li>
+            <li><a href="">Dashboard</a></li>
             <li><a href="">Produtos</a></li>
             <li><a href="">Contato</a></li>
             <li><a href="">Termos e Privacidade</a></li>
