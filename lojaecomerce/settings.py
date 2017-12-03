@@ -170,6 +170,7 @@ MESSAGE_TAGS = {
      messages_constants.ERROR: 'danger',
 }
 
+
 try:
     from .local_settings import *
 except ImportError:

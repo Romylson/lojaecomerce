@@ -1,7 +1,8 @@
 #coding: utf-8
-
+from __future__ import unicode_literals
 from django.db import models
 from django.core.urlresolvers import reverse
+
 
 
 class Category(models.Model):
@@ -17,12 +18,11 @@ class Category(models.Model):
         verbose_name_plural = 'Categorias'
         ordering = ['name']
 
-
     def __str__(self):
         return self.name
 
     def get_absolute_url(self):
-        return reverse('catalog:category', kwargs={'slug': self.slug})    
+        return reverse('catalog:category', kwargs={'slug': self.slug})
 
 
 class Product(models.Model):
@@ -33,7 +33,8 @@ class Product(models.Model):
     description = models.TextField('Descrição', blank=True)
     price = models.DecimalField('Preço', decimal_places=2, max_digits=8)
     image = models.ImageField(
-        'Imagem',upload_to='products',blank=True,null=True)
+        'Imagem', upload_to='products', blank=True, null=True
+    )
 
     created = models.DateTimeField('Criado em', auto_now_add=True)
     modified = models.DateTimeField('Modificado em', auto_now=True)
@@ -47,4 +48,5 @@ class Product(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse('catalog:product', kwargs={'slug': self.slug})     
+        return reverse('catalog:product', kwargs={'slug': self.slug})
+
